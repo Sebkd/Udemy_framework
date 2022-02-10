@@ -4,7 +4,8 @@ from sebkd_framework.templator import render
 
 class Index:
     def __call__(self, *args, **kwargs):
-        return os.environ.get('200_OK'), render('index.html')
+        # return os.environ.get('200_OK'), render('index.html')
+        return '200_OK', render('index.html')
 
 
 class About:
